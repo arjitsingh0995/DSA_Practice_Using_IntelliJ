@@ -1,10 +1,15 @@
 package Stack_DS;
 
+import java.util.Scanner;
 import java.util.Stack;
 
 public class BalancedParenthesis {
     public static void main (String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter any String Contains only Parenthesis");
+        String str = sc.next();
 
+        System.out.println(checkValidString(str));
     }
     static boolean checkValidString(String s) {
        Stack<Character> st = new Stack<>();
